@@ -1,0 +1,17 @@
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\bin\Debug\netcoreapp2.2\WebApiTests.deps.json
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\bin\Debug\netcoreapp2.2\WebApiTests.runtimeconfig.json
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\bin\Debug\netcoreapp2.2\WebApiTests.runtimeconfig.dev.json
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\bin\Debug\netcoreapp2.2\WebApiTests.dll
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\bin\Debug\netcoreapp2.2\WebAPIs.dll
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\bin\Debug\netcoreapp2.2\WebAPIs.pdb
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\obj\Debug\netcoreapp2.2\WebApiTests.csprojAssemblyReference.cache
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\obj\Debug\netcoreapp2.2\WebApiTests.csproj.CoreCompileInputs.cache
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\obj\Debug\netcoreapp2.2\WebApiTests.AssemblyInfoInputs.cache
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\obj\Debug\netcoreapp2.2\WebApiTests.AssemblyInfo.cs
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\obj\Debug\netcoreapp2.2\WebApiTests.csproj.CopyComplete
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\bin\Debug\netcoreapp2.2\WebApiTests.pdb
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\obj\Debug\netcoreapp2.2\WebApiTests.dll
+C:\Users\sverma\source\repos\WebAPIs\WebApiTests\obj\Debug\netcoreapp2.2\WebApiTests.pdb
