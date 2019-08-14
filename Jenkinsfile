@@ -1,20 +1,42 @@
 pipeline {
-  agent any 
-  stages {
-    stage('Build') { 
-      steps {
-       echo 'In build stage'
-            sh '''dotnet restore WebAPIs.sln --source https://api.nuget.org/v3/index.json
-        
-              dotnet build WebAPIs.sln -p:CONFIGURATION=release -V:n '''
-      }
+    agent any
+    parameters {
+        choice(
+            choices: ['BUILD' , 'TEST'],
+            description: '',
+            name: 'REQUESTED_ACTION')
+        string(
+              name: 'GIT_URL', 
+              defaultValue: 'https://github.com/tavisca-sverma/WebAPIs.git',
+              description: 'repository path')
+        string(
+               name: 'WEB_API_SOLUTION_FILE', 
+               defaultValue: 'WebAPIs.sln',
+               description: 'solution path')
+        string(
+             name: 'TEST_PROJECT_PATH', 
+             defaultValue: 'WebApiTests/WebApiTests.csproj', 
+             description: 'test path')
     }
-
-    stage('Test') { 
-      steps {
-    	echo 'In test stage'
-          sh 'dotnet test WebApiTests/WebApiTests.csproj'
-      }
+    stages {
+        stage('Build') {
+            when {
+                expression { params.REQUESTED_ACTION == 'BUILD' || params.REQUESTED_ACTION == 'TEST' }
+            }
+            steps {
+                sh '''
+                    dotnet restore ${WEB_API_SOLUTION_FILE} --source https://api.nuget.org/v3/index.json 
+                    dotnet build ${WEB_API_SOLUTION_FILE} -p:Configuration=release -v:n
+                '''
+            }
+        }
+        stage('Test') {
+            when {
+                expression { params.REQUESTED_ACTION == 'TEST' }
+            }
+            steps {
+                sh'dotnet test ${TEST_PROJECT_PATH}'
+            }
+        }
     }
-  }
 }
