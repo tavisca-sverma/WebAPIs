@@ -49,7 +49,7 @@ pipeline {
                  bat "  dotnet build ${WEB_API_SOLUTION_FILE} -p:Configuration=release -v:n"
                
                  bat " dotnet test ${TEST_PROJECT_PATH}"
-               
+                 echo "----------------------------Publishing the project-----------------------------"
                  bat " dotnet publish ${WEB_API_SOLUTION_FILE} -c Release -o ../publish"
                 
                  powershell " compress-archive WebAPIs/bin/Release/netcoreapp2.2/publish/ artifact.zip -Update"
