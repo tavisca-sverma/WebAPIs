@@ -68,5 +68,11 @@ pipeline {
                bat" docker push ${DOCKER_REPO_NAME}:${IMAGE_VERSION}"
             }
         }
+        
+         post{
+        always{
+            deleteDir()
+       }
+    }
     }
 }
